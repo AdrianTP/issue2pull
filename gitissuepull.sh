@@ -52,8 +52,6 @@ function beginIssuePull {
 	exit
 }
 
-#curl -u AdrianTP --header 'X-GitHub-OTP: 263878' --request POST --data '{"issue":"43", "head":"AdrianTP:issue43", "base":"master"}' https://api.github.com/repos/tedivm/Fetch/pulls
-
 echo "Do you need to append a pull request to an existing issue?"
 select yn in "Yes" "No"; do
 	case $yn in
